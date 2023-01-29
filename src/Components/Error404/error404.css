@@ -1,0 +1,28 @@
+.error404-container {
+    margin-bottom: 150px;
+}
+
+.error404 {
+    margin-top: 100px;
+    font-size: 288px;
+    font-weight: 700;
+    color: #FF6060;
+}
+
+.error-message {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.back-to-home {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.back-to-home a {
+    padding-bottom: 50px;
+}
