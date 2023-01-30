@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="footer-container">
       <FooterLogo />
-      <p className="copyright">2020 Kasa. All rights reserved</p>
+      <p className="copyright">© 2020 Kasa. All rights reserved</p>
     </div>
   );
 }

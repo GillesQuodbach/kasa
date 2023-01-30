@@ -1,0 +1,20 @@
+.home-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.home-cards-container {
+    margin-top: 43px;
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #F7F7F7;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 285px);
+    justify-content: center;
+    grid-gap: 50px;
+}

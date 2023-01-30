@@ -16,3 +16,7 @@ nav a {
     color: #FF6060;
     text-decoration: none;
 }
+
+.activeLink {
+    text-decoration: underline;
+}

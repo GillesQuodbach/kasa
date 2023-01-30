@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Components/Home/Home";
-import Apropos from "./Components/Apropos/Apropos";
-import Error404 from "./Components/Error404/Error404";
+import Home from "./Views/Home/Home";
+import Apropos from "./Views/Apropos/Apropos";
+import Error404 from "./Views/Error404/Error404";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 

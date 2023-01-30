@@ -20,10 +20,8 @@ export default function Header() {
         </NavLink>
         <NavLink
           to="/apropos"
-          style={({ isActive }) => {
-            return isActive
-              ? { textDecoration: "underline" }
-              : { textDecoration: "none" };
+          className={({ isActive }) => {
+            return isActive ? "activeLink" : "";
           }}
         >
           A propos
