@@ -6,13 +6,20 @@ import Error404 from "./Views/Error404/Error404";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 
-function App() {
+function App(props) {
+  const backgroundUrl = [
+    "/assets/Background.png",
+    "/assets/Background-apropos.png",
+  ];
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/apropos" element={<Apropos />} />
+        <Route path="/" element={<Home bannerBackground={backgroundUrl} />} />
+        <Route
+          path="/apropos"
+          element={<Apropos bannerBackground={backgroundUrl} />}
+        />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

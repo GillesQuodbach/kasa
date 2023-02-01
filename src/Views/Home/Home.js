@@ -5,11 +5,11 @@ import Banner from "../../Components/Banner/Banner";
 
 export const data = require("../../Services/annonces.json");
 
-export default function Home() {
-  console.log(data);
+export default function Home(props) {
+  console.log(props);
   return (
     <div className="home-container">
-      <Banner />
+      <Banner bannerBackground={props.bannerBackground[0]} />
       <div className="home-cards-container">
         {data.map((item) => {
           return (
