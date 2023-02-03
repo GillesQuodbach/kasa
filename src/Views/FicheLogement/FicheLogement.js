@@ -1,15 +1,19 @@
-import React from "react";
-import "./Home.css";
-import Banner from "../../Components/Banner/Banner";
-import Carrousel from "../../Components/Carrousel/Carrousel";
+import React, { useState, useEffect, useRef } from "react";
+import "./FicheLogement.css";
+import { useParams } from "react-router-dom";
+import dataLogement from "../../Services/annonces.json";
 
-export const data = require("../../Services/annonces.json");
+export default function FicheLogement() {
+  const { id } = useParams();
 
-export default function Home(props) {
-  console.log(props);
+  const clickedLogement = dataLogement.findIndex(
+    (item) => item.title.replace(/\s+/g, "").trim() === id
+  );
+  console.log(clickedLogement);
+
   return (
     <div className="fiche-logement-container">
-      <p>Hello from fiche-logement</p>
+      <p>{dataLogement[clickedLogement].title}</p>
     </div>
   );
 }

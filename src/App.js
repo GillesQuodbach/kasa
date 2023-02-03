@@ -5,20 +5,19 @@ import Apropos from "./Views/Apropos/Apropos";
 import Error404 from "./Views/Error404/Error404";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import dropdownData from "./Services/dropdownContent.json";
+import FicheLogement from "./Views/FicheLogement/FicheLogement";
 
 function App(props) {
   const backgroundUrl = [
     "/assets/Background.png",
     "/assets/Background-apropos.png",
   ];
-
-  console.log(props);
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home bannerBackground={backgroundUrl} />} />
+        <Route path="/:id" element={<FicheLogement />} />
         <Route
           path="/apropos"
           element={<Apropos bannerBackground={backgroundUrl} />}
