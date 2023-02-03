@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Banner from "../../Components/Banner/Banner";
+import Carrousel from "../../Components/Carrousel/Carrousel";
 
 export const data = require("../../Services/annonces.json");
 
