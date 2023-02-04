@@ -18,3 +18,9 @@
     justify-content: center;
     grid-gap: 50px;
 }
+
+.home-cards-container a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #fff;
+}

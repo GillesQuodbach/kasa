@@ -6,7 +6,9 @@ import { ReactComponent as HeaderLogo } from "../../Assets/logo.svg";
 export default function Header() {
   return (
     <div className="header-container">
-      <HeaderLogo />
+      <NavLink to="/">
+        <HeaderLogo />
+      </NavLink>
       <nav>
         <NavLink
           to="/"

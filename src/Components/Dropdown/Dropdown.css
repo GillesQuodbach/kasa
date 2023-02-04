@@ -5,8 +5,8 @@
     margin-right: auto;
     margin-top: 50px;
     border-radius: 10px 10px 10px 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 .dropdown-visible {
@@ -69,4 +69,11 @@
     transition:
         height 0.2s ease-in-out,
         opacity 0.2s 0.2s ease-in-out;
+}
+
+.equipment-item {
+    list-style-type: none;
+    font-size: 18px;
+    font-size: 0.9em;
+    font-weight: 400;
 }

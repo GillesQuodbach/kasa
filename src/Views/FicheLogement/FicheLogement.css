@@ -1,0 +1,73 @@
+.logement-main-info {
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+    margin-top: 30px;
+}
+
+.logement-info-container {
+    width: min-content;
+    text-align: left;
+}
+
+.logement-title {
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+.logement-location {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.logement-owner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.owner-info {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.logement-owner-name {
+    justify-content: center;
+    width: min-content;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.logement-owner-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.rating-container {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.tags-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}

@@ -3,8 +3,6 @@ import "./Dropdown.css";
 import Chevron from "./icons/chevron.svg";
 
 export default function Dropdown(props) {
-  console.log(props);
-
   const [toggle, setToggle] = useState(false);
   const [heightText, setHeightText] = useState();
 
