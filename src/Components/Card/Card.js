@@ -6,7 +6,7 @@ export default function Card(props) {
   return (
     <Link
       to={{
-        pathname: `/${props.title.replace(/\s+/g, "").trim()}`,
+        pathname: `/details/${props.title.replace(/\s+/g, "").trim()}`,
       }}
     >
       <div

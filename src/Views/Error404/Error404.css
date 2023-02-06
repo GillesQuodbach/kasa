@@ -1,4 +1,8 @@
 .error404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 150px;
 }
 
