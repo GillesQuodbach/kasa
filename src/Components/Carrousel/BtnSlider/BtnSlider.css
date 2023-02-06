@@ -1,0 +1,17 @@
+.btn-slide {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    width: 47px;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-style: none;
+}
+
+.btn-slide img {
+    pointer-events: none;
+}

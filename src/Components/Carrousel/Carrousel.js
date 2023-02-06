@@ -1,27 +1,68 @@
 import React, { useState } from "react";
 import "./Carrousel.css";
-import dataCarrousel from "../../Services/annonces.json";
+import BtnSlider from "./BtnSlider/BtnSlider";
 
-export default function Carrousel() {
+export default function Carrousel({ clickedData }) {
   const [slideAnim, setSlideAnim] = useState({
     index: 1,
     inProgress: false,
   });
 
+  const nextSlide = () => {
+    if (
+      slideAnim.index !== clickedData.pictures.length &&
+      !slideAnim.inProgress
+    ) {
+      setSlideAnim({ index: slideAnim.index + 1, inProgress: true });
+      setTimeout(() => {
+        setSlideAnim({ index: slideAnim.index + 1, inProgress: false });
+      }, 400);
+    } else if (
+      slideAnim.index === clickedData.pictures.length &&
+      !slideAnim.inProgress
+    ) {
+      setSlideAnim({ index: 1, inProgress: true });
+      setTimeout(() => {
+        setSlideAnim({ index: 1, inProgress: false });
+      }, 400);
+    }
+  };
+
+  const prevSlide = () => {
+    if (slideAnim.index !== 1 && !slideAnim.inProgress) {
+      setSlideAnim({ index: slideAnim.index - 1, inProgress: true });
+      setTimeout(() => {
+        setSlideAnim({ index: slideAnim.index - 1, inProgress: false });
+      }, 400);
+    } else if (slideAnim.index === 1 && !slideAnim.inProgress) {
+      setSlideAnim({ index: clickedData.pictures.length, inProgress: true });
+      setTimeout(() => {
+        setSlideAnim({ index: clickedData.pictures.length, inProgress: false });
+      }, 400);
+    }
+  };
+
   return (
     <div>
-      {dataCarrousel.map((obj, index) => {
+      {clickedData.pictures.map((obj, index) => {
+        // console.log(clickedData.pictures);
         return (
           <div
-            key={obj.id}
+            key={index}
+            id={index}
             className={
-              setSlideAnim.index === index + 1
+              slideAnim.index === index + 1
                 ? "carrousel active-anim"
-                : "slide"
+                : "carrousel"
             }
-          ></div>
+          >
+            <img src={clickedData.pictures[index]} alt={`Num ${index}`} />
+          </div>
         );
       })}
+      <BtnSlider moveSlide={nextSlide} direction={"next"} />
+      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      <div className="counter">{`${slideAnim.index}/${clickedData.pictures.length}`}</div>
     </div>
   );
 }

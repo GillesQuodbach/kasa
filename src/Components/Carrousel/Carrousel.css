@@ -1,10 +1,10 @@
 .carrousel-container {
-    max-width: 700px;
-    height: 500px;
-    margin: 100px auto 0;
+    max-width: 100%;
+    height: 415px;
+    margin: -40px auto 40px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 700px) {
@@ -31,25 +31,6 @@
     opacity: 1;
 }
 
-.btn-slide {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #f1f1f1;
-    border: 1px solid rgba(34, 34, 34, 0.287);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.btn-slide img {
-    width: 20px;
-    height: 20px;
-    pointer-events: none;
-}
-
 .prev {
     top: 50%;
     left: 20px;
@@ -71,15 +52,13 @@
     display: flex;
 }
 
-.dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid #f1f1f1;
-    margin: 0 5px;
-    background: #f1f1f1;
-}
-
-.dot.active {
-    background: rgb(32, 32, 32);
+.counter {
+    position: absolute;
+    color: #fff;
+    right: 50%;
+    transform: translate(50%, 50%);
+    bottom: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 25px;
 }

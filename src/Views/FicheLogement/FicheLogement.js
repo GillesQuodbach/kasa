@@ -17,7 +17,9 @@ export default function FicheLogement(props) {
 
   return (
     <div className="fiche-logement-container">
-      <div className="carrousel-container">{/* <Carrousel /> */}</div>
+      <div className="carrousel-container">
+        <Carrousel clickedData={data[clickedLogement]} />
+      </div>
       <div className="logement-main-info">
         <div className="logement-info-container">
           <p className="logement-title">{data[clickedLogement].title}</p>
