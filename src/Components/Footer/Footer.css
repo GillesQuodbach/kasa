@@ -3,7 +3,7 @@
     height: 209px;
     margin-top: 50px;
     padding-top: 20px;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 500;
     background-color: black;
     color: #fff;
@@ -15,4 +15,21 @@
 
 .copyright {
     margin-top: 50px;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .footer-container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .footer-container {
+        margin-top: 20px;
+    }
+
+    .copyright {
+        font-size: 0.5em;
+        margin-top: 30px;
+    }
 }
