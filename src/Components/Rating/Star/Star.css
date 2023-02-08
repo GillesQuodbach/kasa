@@ -1,3 +1,8 @@
 .orangeStar {
-    fill: #FF6060
+    fill: #FF6060;
+    height: min-content;
+}
+
+.greyStar {
+    height: min-content;
 }

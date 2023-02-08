@@ -82,9 +82,19 @@
 
 @media screen and (min-width:1440px) {}
 
-@media screen and (min-width:1024px) and (max-width:1439px) {}
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .dropdown-content {
 
-@media screen and (min-width:768px) and (max-width:1023px) {}
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .dropdown-content {
+
+        padding-bottom: 40px;
+    }
+}
 
 @media screen and (min-width:425px) and (max-width:1023px) {
     .dropdown {
@@ -93,7 +103,8 @@
 
     .dropdown-content {
         font-size: 12px;
-        /* padding-bottom: 25px; */
+        padding-bottom: 40px;
+
     }
 }
 
@@ -116,7 +127,6 @@
 
     .dropdown-content {
         font-size: 12px;
-        padding-bottom: 15px;
         padding-bottom: 40px;
     }
 }

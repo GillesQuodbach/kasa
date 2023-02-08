@@ -54,9 +54,35 @@
 
 @media screen and (min-width:768px) and (max-width:1023px) {}
 
-@media screen and (min-width:425px) and (max-width:1023px) {}
+@media screen and (min-width:425px) and (max-width:1023px) {
+    .carrousel-container {
+        height: 255px;
+        margin: 0;
+    }
 
-@media screen and (min-width:375px) and (max-width:424px) {}
+    .prev {
+        left: -10px;
+    }
+
+    .next {
+        right: -10px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .carrousel-container {
+        height: 255px;
+        margin: 0;
+    }
+
+    .prev {
+        left: -10px;
+    }
+
+    .next {
+        right: -10px;
+    }
+}
 
 
 @media screen and (min-width:320px) and (max-width:374px) {

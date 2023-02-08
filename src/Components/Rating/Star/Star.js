@@ -4,7 +4,7 @@ import "./Star.css";
 export default function Star({ orange }) {
   return (
     <svg
-      className={orange ? "orangeStar" : ""}
+      className={orange ? "orangeStar" : "greyStar"}
       width="30"
       height="30"
       viewBox="0 0 30 30"

@@ -60,8 +60,16 @@ export default function Carrousel({ clickedData }) {
           </div>
         );
       })}
-      <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      <BtnSlider
+        moveSlide={nextSlide}
+        direction={"next"}
+        picNumber={clickedData.pictures.length}
+      />
+      <BtnSlider
+        moveSlide={prevSlide}
+        direction={"prev"}
+        picNumber={clickedData.pictures.length}
+      />
       <div className="counter">{`${slideAnim.index}/${clickedData.pictures.length}`}</div>
     </div>
   );

@@ -7,3 +7,37 @@
     font-size: 0.8em;
     font-weight: 500;
 }
+
+@media screen and (min-width:1440px) {}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {}
+
+@media screen and (min-width:768px) and (max-width:1023px) {}
+
+@media screen and (min-width:425px) and (max-width:767px) {}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .tag-item {
+        background-color: #FF6060;
+        color: #fff;
+        padding: 3px 30px 2px 30px;
+        border-radius: 5px;
+        font-size: 0.6em;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    .tags-container {
+        min-width: 280px;
+        flex-wrap: wrap
+    }
+
+    .tag-item {
+        background-color: #FF6060;
+        color: #fff;
+        padding: 3px 30px 2px 30px;
+        border-radius: 5px;
+        font-size: 0.6em;
+    }
+}
