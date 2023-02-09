@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./FicheLogement.css";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../../Services/annonces.json";
 import Tag from "../../Components/Tag/Tag";
 import Rating from "../../Components/Rating/Rating";
@@ -9,7 +9,7 @@ import "../../Components/Dropdown/Dropdown";
 import Carrousel from "../../Components/Carrousel/Carrousel";
 import Error404 from "../Error404/Error404";
 
-export default function FicheLogement(props) {
+export default function FicheLogement() {
   const { id } = useParams();
   const clickedLogement = data.findIndex(
     (item) => item.title.replace(/\s+/g, "").trim() === id

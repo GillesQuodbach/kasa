@@ -29,16 +29,3 @@ export default function App() {
     </>
   );
 }
-
-/* <Header />
-<Routes>
-  <Route path="/" element={<Home bannerBackground={backgroundUrl} />} />
-  <Route path="/details/:id" element={<FicheLogement />} />
-  <Route
-    path="/apropos"
-    element={<Apropos bannerBackground={backgroundUrl} />}
-  />
-  <Route path="/404" element={<Error404 />} />
-  <Route path="*" element={<Navigate to="/404" replace />} />
-</Routes>
-<Footer /> */
