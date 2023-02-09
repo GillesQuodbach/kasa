@@ -9,8 +9,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 25% 50%;
-
-
 }
 
 .apropos-banner {
@@ -29,10 +27,6 @@
 
 .apropos-banner p {
     display: none;
-}
-
-.banner-container-apropos {
-    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .banner-text {
