@@ -6,9 +6,13 @@ import dropdownData from "../../Services/dropdownContent.json";
 import "./Apropos.css";
 
 export default function Apropos(props) {
+  console.log(props);
   return (
     <div className="apropos-container">
-      <Banner bannerBackground={props.bannerBackground[1]} />
+      <Banner
+        class={"apropos-banner"}
+        bannerBackground={props.bannerBackground[1]}
+      />
       <div className="dropdown-apropos-container">
         {dropdownData.map((item) => {
           return (

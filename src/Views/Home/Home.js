@@ -7,7 +7,10 @@ import data from "../../Services/annonces.json";
 export default function Home(props) {
   return (
     <div className="home-container">
-      <Banner bannerBackground={props.bannerBackground[0]} />
+      <Banner
+        class={"home-banner"}
+        bannerBackground={props.bannerBackground[0]}
+      />
       <div className="home-cards-container">
         {data.map((item) => {
           return (
