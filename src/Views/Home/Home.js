@@ -5,7 +5,6 @@ import Banner from "../../Components/Banner/Banner";
 import data from "../../Services/annonces.json";
 
 export default function Home(props) {
-  console.log(data);
   return (
     <div className="home-container">
       <Banner bannerBackground={props.bannerBackground[0]} />

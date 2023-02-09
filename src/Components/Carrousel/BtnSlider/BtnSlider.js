@@ -4,9 +4,6 @@ import rightArrow from "../BtnSlider/right-arrow.svg";
 import "./BtnSlider.css";
 
 export default function BtnSlider({ moveSlide, direction, picNumber }) {
-  // console.log(moveSlide);
-  // console.log(direction);
-  console.log(picNumber);
   return (
     <button
       onClick={moveSlide}
