@@ -101,8 +101,6 @@
 
     .error-message {
         white-space: nowrap;
-        /* padding-left: 40px;
-        padding-right: 40px; */
         text-align: center;
         font-size: 18px;
     }
